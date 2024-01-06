@@ -1,45 +1,46 @@
 # vscode-opener.nvim
 
-English | [简体中文](./README.zh.md)
+[English](./README.md) | 简体中文
 
-Open current working area, buffers, etc. in VSCode
+在 VSCode 打开当前工作区、缓冲区等
 
 --- 
 
 https://github.com/xlboy/vscode-opener.nvim/assets/63690944/06bc02be-1dd6-4e5a-acda-84747ddc02e5
 
-## Features
+## 功能
 
-- Open the current buffer in VSCode
+- 在 VSCode 中打开当前 buffer
 
-- Open all buffers in VSCode
+- 在 VSCode 中打开所有 buffer
 
-- Open the current working directory (cwd) in VSCode
+- 在 VSCode 中打开当前工作的目录（cwd）
 
-## Installation
 
-1. Use lazy
+## 安装
+
+1. 使用 lazy
 ```lua
 { "xlboy/vscode-opener.nvim" }
 ```
 
-## Configuration
+## 配置
 
-> The purpose of setup is only to set the configuration
+> setup 的作用仅单单是设置配置
 ```lua
-require('vscode-opener').setup({ ... }) -- See below↓for specific configuration parameters
+require('vscode-opener').setup({ ... }) -- 具体配置参数请看下面↓
 ```
 
-Default configuration:
+默认配置：
 ```lua
 {
-  notify = true, -- Whether or not to give related prompts after opening related content in VSCode
+  notify = true, -- 在 VSCode 中打开相关内容后是否要做出相关提示
 }
 ```
 
-## How to use
+## 如何使用
 
-###  Through shortcut keys
+### 通过快捷键
 
 Lazy:
 
@@ -71,7 +72,7 @@ Lazy:
 }
 ```
 
-### Through the picker
+### 通过选择器
 
 ```lua
 {
@@ -86,5 +87,5 @@ Lazy:
 }
 ```
 
-## License
+## 许可证
 MIT
