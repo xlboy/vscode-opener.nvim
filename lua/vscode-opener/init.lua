@@ -1,13 +1,16 @@
 local M = {}
 
-local config = { notify = true }
+local config = {
+  notify = true,
+  via = "code"
+}
 
 local notify = function(msg)
   vim.notify(msg, vim.log.levels.INFO, { title = "vscode-opener.nvim" })
 end
 
 local function launch(opts)
-  local cmd_prefix = "code -g "
+  local cmd_prefix = config.via .. " -g "
   local cmd_args = ""
 
   if not opts.filenames or #opts.filenames == 0 then

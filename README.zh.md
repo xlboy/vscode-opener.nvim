@@ -35,6 +35,9 @@ require('vscode-opener').setup({ ... }) -- 具体配置参数请看下面↓
 ```lua
 {
   notify = true, -- 在 VSCode 中打开相关内容后是否要做出相关提示
+  -- 打开 VSCode 时使用的命令
+  -- 可能的值: "code" | "cursor"
+  via = "code"
 }
 ```
 

@@ -34,6 +34,9 @@ Default configuration:
 ```lua
 {
   notify = true, -- Whether or not to give related prompts after opening related content in VSCode
+  -- The command to use when opening VSCode
+  -- Possible values: "code" | "cursor"
+  via = "code"
 }
 ```
 
